@@ -31,14 +31,6 @@
 				margin-bottom: 10px;
 			}
 
-			.droite{
-				text-align: right;
-			}
-
-			.gauche{
-				text-align: left;
-			}
-
 			.lien{
 				width: 100%;
 
@@ -78,7 +70,7 @@
 	<body>
 	<h1><?php echo $GLOBALS['titre']; ?></h1>
 	<ul>
-		<li class="gauche">
+		<li>
 			<a href="<?php echo $GLOBALS['url_photos']; ?>">
 				<div class="lien" style="background-image: url('images/photos.jpg');">
 					<div class="masque">
@@ -89,7 +81,7 @@
 				</div>
 			</a>
 		</li>
-		<li class="droite">
+		<li>
 			<a href="<?php echo $GLOBALS['url_videos']; ?>">
 				<div class="lien" style="background-image: url('images/videos.jpg');">
 					<div class="masque">
