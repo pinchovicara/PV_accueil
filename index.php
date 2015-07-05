@@ -1,7 +1,11 @@
+<?php
+	require_once 'conf/conf.php';
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 	<head>
-		<title>Pincho Vicara > Accueil</title>
+		<title><?php echo $GLOBALS['title']; ?></title>
 		<meta charset="utf-8">
 		<style type="text/css">
 			body{
@@ -61,7 +65,6 @@
 			}
 
 			.lien:hover .masque{
-				-moz-opacity: 0.70;
 				opacity: 0.7;
 				visibility: visible;
 			}
@@ -73,10 +76,10 @@
 		</style>
 	</head>
 	<body>
-	<h1>Pincho Vicara</h1>
+	<h1><?php echo $GLOBALS['titre']; ?></h1>
 	<ul>
 		<li class="gauche">
-			<a href="../pv_photos">
+			<a href="<?php echo $GLOBALS['url_photos']; ?>">
 				<div class="lien" style="background-image: url('images/photos.jpg');">
 					<div class="masque">
 						<div class="textelien">
@@ -87,7 +90,15 @@
 			</a>
 		</li>
 		<li class="droite">
-			<a href="../pv_videos"><div class="lien" style="background-image: url('images/videos.jpg');"><div class="masque"><div class="textelien">Vidéos</div></div></div></a>
+			<a href="<?php echo $GLOBALS['url_videos']; ?>">
+				<div class="lien" style="background-image: url('images/videos.jpg');">
+					<div class="masque">
+						<div class="textelien">
+							Vidéos
+						</div>
+					</div>
+				</div>
+			</a>
 		</li>
 	</ul>
 	</body>
